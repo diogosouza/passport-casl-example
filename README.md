@@ -1,4 +1,4 @@
-That's a simple example on how to authenticate users with [Passport](http://passportjs.org/) and authorize resources with CASL Node packages.
+That's a simple example on how to authenticate users with [Passport](http://passportjs.org/) and authorize resources with [CASL](https://github.com/stalniy/casl).
 
 The project is created with Node and Express as the server.
 
