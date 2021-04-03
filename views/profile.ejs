@@ -1,0 +1,23 @@
+<%- include('header'); -%> 
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Hello, <%= name.first %>!</h1>
+
+        <img
+            class="mb-4"
+            src="<%= picture %>"
+            alt=""
+            width="172"
+        />
+    
+        <ul>
+            <li>ID: <%= id %></li>
+            <li>Name: <%= name.first %> <%= name.last %></li>
+            <li>Email: <a href="mailto:<%= email %>"><%= email %></a></li>
+            <li>Address: <%= address.street.number %> <%= address.street.name %></li>
+            <li>Phone: <%= phone %></li>
+        </ul>
+        <a href="/logout" role="button">Log out »</a>
+    </div>
+</div>

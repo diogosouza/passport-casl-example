@@ -1,0 +1,19 @@
+<%- include('header'); -%>
+
+<div class="jumbotron text-center">
+  <div class="container">
+	<% if (!user) { %>
+		<h1 class="display-3">Welcome!</h1>
+		<p>Please <a href="/login">log in »</a></p>
+    <% } else { %>
+		<h1 class="display-3">Hello, <%= user.name.first %>!</h1>
+			<p>Welcome to the app!</p>
+		<p>
+			<a class="btn btn-primary btn-lg" href="/profile" role="button">View your profile »</a>
+		</p>
+		<p>
+			<a href="/logout" role="button">Log out »</a>
+		</p>
+    <% } %>
+  </div>
+</div>
